@@ -1,0 +1,45 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #f4f6f8;
+  color: #222;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #24578a;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+section {
+  padding: 16px;
+  border: 1px solid #d5dbe1;
+  border-radius: 6px;
+  background: white;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 680px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
