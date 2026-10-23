@@ -36,7 +36,14 @@
     </section>
     <section id="javascript">
       <h2>4. JavaScript</h2>
-      <p>JavaScript 可以让网页响应操作。后面可以做一道小测验，点击按钮后在页面上显示结果。</p>
+      <p>JavaScript 可以让网页响应操作。试试下面的小测验。</p>
+      <fieldset>
+        <legend>哪个标签用来放导航链接？</legend>
+        <label><input type="radio" name="quiz" value="nav"> &lt;nav&gt;</label>
+        <label><input type="radio" name="quiz" value="footer"> &lt;footer&gt;</label>
+      </fieldset>
+      <button id="check-answer" type="button">检查答案</button>
+      <p id="quiz-result" role="status"></p>
     </section>
     <section id="project">
       <h2>5. 项目开发</h2>
@@ -50,5 +57,6 @@
   <footer>
     <p>网页开发入门练习</p>
   </footer>
+  <script src="quiz.js"></script>
 </body>
 </html>
