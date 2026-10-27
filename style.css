@@ -8,6 +8,18 @@ body {
   color: #222;
 }
 
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #1d3046;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -17,25 +29,49 @@ nav ul {
 }
 
 nav a {
-  color: #24578a;
+  color: #b6e0ff;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
 section {
   padding: 16px;
   border: 1px solid #d5dbe1;
-  border-radius: 6px;
+  border-top: 3px solid #3475a8;
+  border-radius: 8px;
   background: white;
 }
 
 section h2 {
   margin-top: 0;
   font-size: 1.2rem;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0 0 12px;
+}
+
+fieldset label {
+  display: block;
+}
+
+#check-answer {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 4px;
+  background: #24578a;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+#quiz-result {
+  margin-bottom: 0;
 }
 
 @media (max-width: 680px) {
