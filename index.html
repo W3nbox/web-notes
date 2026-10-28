@@ -7,56 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>我的网页学习笔记</h1>
-    <p>用一个小网站记录我学到的网页开发基础。</p>
-    <nav aria-label="学习主题">
+    <nav class="site-nav" aria-label="主导航">
+      <a class="brand" href="index.html">网页学习笔记</a>
       <ul>
-        <li><a href="#web">网页基础</a></li>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#javascript">JavaScript</a></li>
-        <li><a href="#project">项目开发</a></li>
-        <li><a href="#deployment">部署与托管</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="lessons.html">学习笔记</a></li>
+        <li><a href="projects.html">项目记录</a></li><li><a href="playground.html">实验室</a></li>
       </ul>
     </nav>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">前端入门 · 学习记录</p>
+      <h1>我的第一站，<br>从写网页开始。</h1>
+      <p>从浏览器如何打开一个网页，到用 HTML 搭结构、用 CSS 排版，再用 JavaScript 让按钮动起来。</p>
+      <a class="action" href="lessons.html">开始学习 →</a>
+    </div>
+    <figure class="preview">
+      <figcaption>01 / 我的第一个 HTML 片段</figcaption>
+      <pre><code>&lt;main&gt;
+  &lt;h1&gt;你好，网页！&lt;/h1&gt;
+  &lt;p&gt;从这里开始。&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+    </figure>
   </header>
-  <main>
-    <section id="web">
-      <h2>1. 网页基础</h2>
-      <p>输入网址后，浏览器通常先通过 DNS 查询域名对应的 IP 地址，然后通过 HTTP 或 HTTPS 向服务器发出请求。服务器返回响应，浏览器读取响应并显示网页。</p>
-    </section>
-    <section id="html">
-      <h2>2. HTML</h2>
-      <p>HTML 用来组织网页内容。例如，这个页面用 <code>&lt;nav&gt;</code> 放导航链接，用 <code>&lt;main&gt;</code> 放主要内容。</p>
-    </section>
-    <section id="css">
-      <h2>3. CSS</h2>
-      <p>CSS 控制网页的样式。这个页面用 Grid 排列学习卡片，用 Flexbox 排列导航链接。</p>
-    </section>
-    <section id="javascript">
-      <h2>4. JavaScript</h2>
-      <p>JavaScript 可以让网页响应操作。试试下面的小测验。</p>
-      <fieldset>
-        <legend>哪个标签用来放导航链接？</legend>
-        <label><input type="radio" name="quiz" value="nav"> &lt;nav&gt;</label>
-        <label><input type="radio" name="quiz" value="footer"> &lt;footer&gt;</label>
-      </fieldset>
-      <button id="check-answer" type="button">检查答案</button>
-      <p id="quiz-result" role="status"></p>
-    </section>
-    <section id="project">
-      <h2>5. 项目开发</h2>
-      <p>先写内容，再加样式和交互。每完成一部分，就用浏览器打开页面检查。</p>
-    </section>
-    <section id="deployment">
-      <h2>6. 部署与托管</h2>
-      <p>Git 用来记录项目的修改。完成后可以上传到 GitHub，再用 GitHub Pages 发布网页。</p>
-    </section>
+  <main class="home">
+    <p class="eyebrow">学习路线</p>
+    <h2>今天从哪里开始？</h2>
+    <div class="routes">
+      <section>
+        <p class="eyebrow">01 / 阅读</p>
+        <h3>了解网页基础</h3>
+        <p>看看输入网址后，浏览器和服务器是怎么通信的。</p>
+        <a href="lessons.html#web">阅读基础笔记 →</a>
+      </section>
+      <section>
+        <p class="eyebrow">02 / 动手</p>
+        <h3>做个布局实验</h3>
+        <p>切换排列方向，观察 Flexbox 如何移动三个元素。</p>
+        <a href="playground.html">进入实验室 →</a>
+      </section>
+      <section>
+        <p class="eyebrow">03 / 项目</p>
+        <h3>这个网站怎么做</h3>
+        <p>看看从 HTML 骨架到多页网站的制作过程。</p>
+        <a href="projects.html">查看项目记录 →</a>
+      </section>
+    </div>
   </main>
-  <footer>
-    <p>网页开发入门练习</p>
-  </footer>
-  <script src="quiz.js"></script>
+  <footer><p>我的网页学习笔记 · HTML / CSS / JavaScript</p></footer>
 </body>
 </html>

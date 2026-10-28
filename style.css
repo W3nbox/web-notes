@@ -32,7 +32,7 @@ nav a {
   color: #b6e0ff;
 }
 
-main {
+main:not(.home), .routes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -75,7 +75,100 @@ fieldset label {
 }
 
 @media (max-width: 680px) {
-  main {
+  main:not(.home), .routes {
     grid-template-columns: 1fr;
   }
+}
+
+.site-nav, .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-nav {
+  margin-bottom: 16px;
+}
+
+.site-nav a, .routes a {
+  color: #24578a;
+}
+
+.brand, .action {
+  font-weight: 700;
+}
+
+.hero {
+  padding: clamp(24px, 5vw, 56px);
+  background: linear-gradient(135deg, #17283c, #254d68);
+}
+
+.hero > div, .preview {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero .eyebrow {
+  color: #b6e0ff;
+}
+
+.action {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background: #d8efff;
+  color: #17283c;
+}
+
+.preview {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid #55718a;
+  border-radius: 8px;
+  background: #122234;
+}
+
+.preview pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.routes h3 {
+  margin: 0;
+}
+
+footer {
+  margin-top: 28px;
+  border-top: 1px solid #d5dbe1;
+}
+
+#layout-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #e9f3f0;
+  border-radius: 6px;
+}
+
+#layout-demo span {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #254e4c;
+  color: white;
 }
