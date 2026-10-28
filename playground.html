@@ -1,32 +1,28 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>实验室 | 网页学习笔记</title>
+  <title>Playground | Web Notes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="site-nav" aria-label="主导航">
-      <a class="brand" href="index.html">网页学习笔记</a>
-      <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="lessons.html">学习笔记</a></li>
-        <li><a href="projects.html">项目记录</a></li><li><a href="playground.html">实验室</a></li>
-      </ul>
-    </nav>
-  <header class="hero"><div><p class="eyebrow">03 / PLAYGROUND</p><h1>动手试一试</h1><p>改变一个 CSS 属性，看看三个元素怎么移动。</p></div></header>
-<main class="home">
-  <section>
-    <h2>Flexbox 布局实验</h2>
-    <label for="direction">排列方向</label>
-    <select id="direction"><option value="row">横向</option><option value="column">纵向</option></select>
-    <div id="layout-demo"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-    <pre><code id="layout-code" role="status">flex-direction: row;</code></pre>
-  </section>
-  <p><a href="lessons.html#javascript">下一项 · HTML 小测验 →</a></p>
-</main>
-<script src="playground.js"></script>
-  <footer><p>我的网页学习笔记 · 实验室</p></footer>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html">Web Notes</a>
+    <div><a href="index.html">Home</a> <a href="lessons.html">Notes</a> <a href="projects.html">Build log</a> <a href="playground.html" aria-current="page">Playground</a></div>
+  </nav>
+  <header><h1>Playground</h1></header>
+  <main>
+    <section>
+      <h2>Flexbox layout</h2>
+      <label for="direction">Direction</label>
+      <select id="direction"><option value="row">Row</option><option value="column">Column</option></select>
+      <div id="layout-demo"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <pre><code id="layout-code" role="status">flex-direction: row;</code></pre>
+    </section>
+    <p><a href="lessons.html#javascript">Next: HTML quiz →</a></p>
+  </main>
+  <footer>Web Notes</footer>
+  <script src="playground.js"></script>
 </body>
 </html>

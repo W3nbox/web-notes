@@ -3,11 +3,11 @@ function checkAnswer() {
   const result = document.getElementById('quiz-result');
 
   if (!answer) {
-    result.textContent = '请先选一个答案。';
+    result.textContent = 'Choose an answer first.';
   } else if (answer.value === 'nav') {
-    result.textContent = '答对了！';
+    result.textContent = 'Correct!';
   } else {
-    result.textContent = '再试一次。';
+    result.textContent = 'Try again.';
   }
 }
 

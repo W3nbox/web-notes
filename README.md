@@ -1,16 +1,7 @@
-# 我的网页学习笔记
+# Web Notes
 
-一个简单的网页开发入门练习，记录网页基础、HTML、CSS、JavaScript、项目开发和部署与托管。
+Open `index.html` in a browser.
 
-## 怎么打开
-
-用浏览器打开 `index.html`。点击顶部导航可以跳到对应小节，也可以在 JavaScript 小节试做一道选择题。
-
-## 练习内容
-
-- index.html 是首页，提供阅读、练习和项目三个入口。
-- lessons.html 收录六个知识点和小测验。
-- `style.css` 用 Flexbox 排列导航，用 Grid 排列卡片。屏幕宽度不超过 680 像素时，卡片排成一列。
-- `quiz.js` 监听答题按钮的点击事件，并更新页面上的答题结果。
-- `projects.html` 记录网站的制作过程。
-- `playground.html` 和 `playground.js` 演示如何切换 Flexbox 排列方向。
+- **Notes** covers six topics and includes an HTML quiz.
+- **Build log** describes how the site was made.
+- **Playground** demonstrates Flexbox direction.

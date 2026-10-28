@@ -1,70 +1,36 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>学习笔记 | 我的网页学习笔记</title>
+  <title>Notes | Web Notes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="site-nav" aria-label="主导航">
-      <a class="brand" href="index.html">网页学习笔记</a>
-      <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="lessons.html">学习笔记</a></li>
-        <li><a href="projects.html">项目记录</a></li><li><a href="playground.html">实验室</a></li>
-      </ul>
-    </nav>
-  <header>
-    <h1>六个网页开发知识点</h1>
-    <p>用一个小网站记录我学到的网页开发基础。</p>
-    <nav aria-label="学习主题">
-      <ul>
-        <li><a href="#web">网页基础</a></li>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#javascript">JavaScript</a></li>
-        <li><a href="#project">项目开发</a></li>
-        <li><a href="#deployment">部署与托管</a></li>
-      </ul>
-    </nav>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html">Web Notes</a>
+    <div><a href="index.html">Home</a> <a href="lessons.html" aria-current="page">Notes</a> <a href="projects.html">Build log</a> <a href="playground.html">Playground</a></div>
+  </nav>
+  <header><h1>Web development notes</h1>
+    <nav class="topics" aria-label="Topics"><a href="#web">Web</a><a href="#html">HTML</a><a href="#css">CSS</a><a href="#javascript">JavaScript</a><a href="#project">Projects</a><a href="#deployment">Deployment</a></nav>
   </header>
-  <main>
-    <section id="web">
-      <h2>1. 网页基础</h2>
-      <p>输入网址后，浏览器通常先通过 DNS 查询域名对应的 IP 地址，然后通过 HTTP 或 HTTPS 向服务器发出请求。服务器返回响应，浏览器读取响应并显示网页。</p>
-    </section>
-    <section id="html">
-      <h2>2. HTML</h2>
-      <p>HTML 用来组织网页内容。例如，这个页面用 <code>&lt;nav&gt;</code> 放导航链接，用 <code>&lt;main&gt;</code> 放主要内容。</p>
-    </section>
-    <section id="css">
-      <h2>3. CSS</h2>
-      <p>CSS 控制网页的样式。这个页面用 Grid 排列学习卡片，用 Flexbox 排列导航链接。</p>
-    </section>
-    <section id="javascript">
-      <h2>4. JavaScript</h2>
-      <p>JavaScript 可以让网页响应操作。试试下面的小测验。</p>
+  <main class="cards">
+    <section id="web"><small>01</small><h2>Web fundamentals</h2><p>DNS resolves a domain to an IP address. The browser sends an HTTP request to the server and renders the response.</p></section>
+    <section id="html"><small>02</small><h2>HTML</h2><p>Semantic elements describe their purpose. Use <code>&lt;nav&gt;</code> for navigation and <code>&lt;main&gt;</code> for the primary content.</p></section>
+    <section id="css"><small>03</small><h2>CSS</h2><p>Grid arranges the note cards. Flexbox arranges the links in the navigation.</p><a href="playground.html">Try Flexbox →</a></section>
+    <section id="javascript"><small>04</small><h2>JavaScript</h2><p>A click event runs a function that updates the result below.</p>
       <fieldset>
-        <legend>哪个标签用来放导航链接？</legend>
+        <legend>Which element contains navigation links?</legend>
         <label><input type="radio" name="quiz" value="nav"> &lt;nav&gt;</label>
         <label><input type="radio" name="quiz" value="footer"> &lt;footer&gt;</label>
       </fieldset>
-      <button id="check-answer" type="button">检查答案</button>
+      <button id="check-answer" type="button">Check answer</button>
       <p id="quiz-result" role="status"></p>
     </section>
-    <section id="project">
-      <h2>5. 项目开发</h2>
-      <p>先写内容，再加样式和交互。每完成一部分，就用浏览器打开页面检查。</p>
-    </section>
-    <section id="deployment">
-      <h2>6. 部署与托管</h2>
-      <p>Git 用来记录项目的修改。完成后可以上传到 GitHub，再用 GitHub Pages 发布网页。</p>
-    </section>
+    <section id="project"><small>05</small><h2>Project development</h2><p>Write the content, add styles and interactions, then test each change in the browser.</p><a href="projects.html">View the build log →</a></section>
+    <section id="deployment"><small>06</small><h2>Deployment</h2><p>Git tracks changes. GitHub Pages can publish static files from a repository.</p></section>
   </main>
-  <footer>
-    <p>网页开发入门练习</p>
-  </footer>
+  <footer>Web Notes</footer>
   <script src="quiz.js"></script>
 </body>
 </html>
